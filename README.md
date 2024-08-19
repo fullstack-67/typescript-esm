@@ -7,9 +7,10 @@
 - `npm run build`
 - `npm run start`
 
-# Testing
+## Testing
 
 - Try using `tsconfig.cjs.json` and rebuild to see the output.
+  - Note that due to `esmoduleinterop` option, I can still run the code even though it is `commonjs`.
 
 ## Note
 
