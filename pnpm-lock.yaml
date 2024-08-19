@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      nanoid:
+        specifier: ^5.0.7
+        version: 5.0.7
       tsconfig-paths:
         specifier: ^4.2.0
         version: 4.2.0
@@ -331,6 +334,11 @@ packages:
   mylas@2.1.13:
     resolution: {integrity: sha512-+MrqnJRtxdF+xngFfUUkIMQrUUL0KsxbADUkn23Z/4ibGg192Q+z+CQyiYwvWTsYjJygmMR8+w3ZDa98Zh6ESg==}
     engines: {node: '>=12.0.0'}
+
+  nanoid@5.0.7:
+    resolution: {integrity: sha512-oLxFY2gd2IqnjcYyOXD8XGCftpGtZP2AbHbOkthDkvRywH5ayNtPVy9YlOPcHckXzbLTCHpkb7FB+yuxKV13pQ==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
 
   nodemon@3.1.4:
     resolution: {integrity: sha512-wjPBbFhtpJwmIeY2yP7QF+UKzPfltVGtfce1g/bB15/8vCGZj8uxD62b/b9M9/WVgme0NZudpownKN+c0plXlQ==}
@@ -669,6 +677,8 @@ snapshots:
   ms@2.1.2: {}
 
   mylas@2.1.13: {}
+
+  nanoid@5.0.7: {}
 
   nodemon@3.1.4:
     dependencies:

@@ -22,6 +22,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "nanoid": "^5.0.7",
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.17.0"
   }

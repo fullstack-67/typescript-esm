@@ -1,4 +1,6 @@
-# Typescript ESM
+# Typescript ESM - Test with `nanoid`
+
+The latest version of `nanoid` is V5 and it does not support `commonjs`.
 
 ## Usage
 
@@ -7,29 +9,26 @@
 - `npm run build`
 - `npm run start`
 
-# Testing
+## Testing
 
 - Try using `tsconfig.cjs.json` and rebuild to see the output.
 
 ## Note
 
-- I installed these pacakges:
-  - `npm init -y`
-  - `pnpm install -D typescript @types/node nodemon`
-  - `pnpm install -D @tsconfig/node-lts @tsconfig/recommended` ([Option](https://github.com/tsconfig/bases))
-  - `pnpm install tsx`
-- I added in `package.json`:
+- I can run the code even though the module is `commonjs`. This is because in `tsconfig.json`, there is an option.
 
 ```json
 {
-  "type": "module"
+  "esModuleInterop": true
 }
 ```
 
-- I ran code by
-  - `npx tsx ./src/index.ts`
-  - I no longer used `ts-node` [(Ref)](https://stackoverflow.com/a/76343394).
+- If I delete the lines with
 
-## References
+```js
+Object.defineProperty(exports, "__esModule", { value: true });
+```
 
-- https://gist.github.com/slavafomin/cd7a54035eff5dc1c7c2eff096b23b6b
+in `js` files, I will see ESM error.
+
+> ReferenceError: require is not defined in ES module scope...
