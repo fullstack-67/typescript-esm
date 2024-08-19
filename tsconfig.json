@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@tsconfig/recommended/tsconfig.json",
+  "extends": "@tsconfig/node-lts/tsconfig.json",
   "compilerOptions": {
     "types": ["node"],
     "baseUrl": "./",
