@@ -1,3 +1,2 @@
-// import { a } from "./another.js";
-const b = 1;
-console.log(b);
+import { msg } from "@src/lib.js";
+console.log(msg);
