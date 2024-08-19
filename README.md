@@ -7,12 +7,16 @@
 - `npm run build`
 - `npm run start`
 
+# Testing
+
+- Try using `tsconfig.cjs.json` and rebuild to see the output.
+
 ## Note
 
 - I installed these pacakges:
   - `npm init -y`
   - `pnpm install -D typescript @types/node nodemon`
-  - `pnpm install -D @tsconfig/node-lts` (Choose from [here](https://github.com/tsconfig/bases))
+  - `pnpm install -D @tsconfig/node-lts @tsconfig/recommended` ([Option](https://github.com/tsconfig/bases))
   - `pnpm install tsx`
 - I added in `package.json`:
 
