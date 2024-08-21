@@ -1,6 +1,6 @@
 # Typescript ESM - Test with `nanoid`
 
-The latest version of `nanoid` is V5 and it does not support `commonjs`.
+- The latest version of `nanoid` is V5 and it does not support `commonjs`.
 
 ## Usage
 
@@ -8,10 +8,4 @@ The latest version of `nanoid` is V5 and it does not support `commonjs`.
 - `npm run dev`
 - `npm run build`
 - `npm run start`
-
-## Testing
-
-- Try using `tsconfig.cjs.json` and rebuild to see the output.
-- I should get error from running `npm start`.
-
-> ReferenceError: exports is not defined in ES module scope...
+  - Got `ERR_REQUIRE_ESM` error.
